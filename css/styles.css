@@ -4,7 +4,7 @@
     --negro: #181818;
     --negro-5: rgba(0, 0, 0, 0.5);
     --negro-7: rgba(0, 0, 0, 0.75);
-    --tipo-titular: 'Playfair Display', serif;
+    --tipo-titular: 'Allura', cursive;
     --tipo-principal: 'Montserrat', sans-serif;
     --tipo-nav: 'Advent Pro', sans-serif;
   }
@@ -27,7 +27,7 @@
     vertical-align: baseline;
   }
 
-  img , figure{
+  .seccion .img, figure{
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -166,6 +166,17 @@
     /* display: none; */
   }
 
+  .header .h1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header img{
+    margin-right: 10px;
+  }
+
   .header .ul{
     display: flex;
     flex-flow: row wrap;
@@ -176,6 +187,8 @@
   .header .li{
     margin:0 1em;
   }
+
+ 
 
   .main{
     margin: 0 0 1em;
@@ -195,7 +208,7 @@
   }
 
   .seccion .info{
-    font-size: 1.3em;
+    font-size: 1.5em;
     animation: aparecer1 2s ease 1 both ;
   }
 
@@ -214,6 +227,7 @@
   }
 
   .seccion .ul .a{
+    font-size: 0.7em;
     border:1px solid rgba(255,255,255,.2);
     border-radius: 50%;
     padding: 1em 1em 1em;
@@ -234,7 +248,7 @@
   .seccion .h2{
     font-family: var(--tipo-titular);
     font-weight: 600;
-    font-size: 5em;
+    font-size: 6em;
     line-height:1em;
     color:var(--blanco);
     mix-blend-mode: exclusion;
@@ -242,7 +256,8 @@
 
   .seccion .h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
+    padding-top: 0.2em;
   }
 
   .seccion .grid{
@@ -317,10 +332,27 @@
     max-width: 40rem;
     margin: 0 0 2rem;
     font-size: 1.1em ;
-    text-align: left;
+    text-align: center;
   }
 
-  .about .rrss{
+  .habilidades{
+    align-items: center;
+  }
+
+  .habilidades img{
+    margin: 1rem;
+  }
+
+  .about .li{
+    margin: 0 4em;
+  }
+
+  .about .svg{
+    width:3em;
+    height:3em;
+  }
+
+  .contact .rrss{
     width:100%;
     display: flex;
     flex-flow: row wrap;
@@ -328,14 +360,10 @@
     align-items: center;
   }
 
-  .about .li{
-    margin: 0 1em;
+  .contact .li{
+    margin: 1em;
   }
 
-  .about .svg{
-    width:3em;
-    height:3em;
-  }
 
   .footer{
     font-family: var(--tipo-nav);
