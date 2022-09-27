@@ -5,9 +5,10 @@
     --negro-5: rgba(0, 0, 0, 0.5);
     --negro-7: rgba(0, 0, 0, 0.75);
     --tipo-titular: 'Allura', cursive;
-    --tipo-principal: 'Montserrat', sans-serif;
-    --tipo-nav: 'Advent Pro', sans-serif;
+    --tipo-principal: 'Roboto';
+    --tipo-nav: 'Roboto', sans-serif;
   }
+
   
   @media screen and (prefers-color-scheme:light){
     :root {
@@ -148,7 +149,7 @@
   
   
   .header{
-    font-family: 'Advent Pro', sans-serif;
+    font-family: var(--tipo-nav);
     font-weight: 100;
     position: fixed;
     width: 100%;
@@ -186,6 +187,11 @@
 
   .header .li{
     margin:0 1em;
+  }
+
+  .header .a{
+    font-family: var(--tipo-nav);
+
   }
 
  
@@ -245,7 +251,7 @@
     border-color: var(--blanco);
   }
 
-  .seccion .h2{
+  .seccion .h1{
     font-family: var(--tipo-titular);
     font-weight: 600;
     font-size: 6em;
@@ -254,8 +260,20 @@
     mix-blend-mode: exclusion;
   }
 
+  .seccion .h2{
+    font-family: var(--tipo-principal);
+    font-style: italic;
+    font-weight: 700, bold;
+    font-size: 6em;
+    line-height:1em;
+    color:var(--blanco);
+    mix-blend-mode: exclusion;
+  }
+
   .seccion .h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--tipo-principal);
+    font-weight: 700, bold;
+    font-style: italic;
     font-size: 2em;
     padding-top: 0.2em;
   }
@@ -301,7 +319,7 @@
     
     color:var(--blanco);
     font-size: 1.8em;
-    font-family: var(--tipo-titular);
+    font-family: var(--tipo-principal);
     font-style: italic;
     opacity: 0;
     transform:translateZ(1) scale(1.5);
@@ -352,7 +370,7 @@
     height:3em;
   }
 
-  .contact .rrss{
+  /*.contact .rrss{
     width:100%;
     display: flex;
     flex-flow: row wrap;
@@ -363,11 +381,12 @@
   .contact .li{
     margin: 1em;
   }
-
+  */
 
   .footer{
     font-family: var(--tipo-nav);
     padding:2em 0;
+    font-weight: 100;
     background-color: black;
     text-align: center;
     color:var(--blanco);
